@@ -45,6 +45,11 @@ button[disabled] {
   color: #ccc !important;
   cursor: not-allowed !important;
 }
+button[block] {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
 button[size="1"] {
   font-size: 12px;
   height: 18px;
