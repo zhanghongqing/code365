@@ -11,8 +11,12 @@ button {
   border-radius: 3px;
   transition: all .3s ease;
 }
+button:hover {
+  opacity: 0.8;
+  transition: all .1s ease;
+}
 button:active {
-  opacity: 0.7;
+  opacity: 0.6;
   transition: all .05s ease;
 }
 button[line] {
@@ -211,4 +215,30 @@ button[type="dark"][line-fill] {
 button[type="dark"][line] {
   box-shadow: 0 0 0 1px #000000 inset;
   color: #000000;
+}
+/* 按钮组 */
+.btnGroup {
+  overflow: hidden;
+}
+.btnGroup .btn {
+  float: left;
+  border-radius: 0;
+}
+.btnGroup .btn:hover {
+  opacity: 0.8;
+  transition: all .1s ease;
+}
+.btnGroup .btn:active {
+  opacity: 0.6;
+  transition: all .05s ease;
+}
+.btnGroup .btn:first-child {
+  border-radius: 5px 0 0 5px;
+}
+.btnGroup .btn:last-child {
+  border-radius: 0 5px 5px 0;
+}
+.btnGroup[type="primary"] .btn {
+  background: #4b91e0;
+  color: #fff;
 }
