@@ -1,0 +1,94 @@
+button {
+  height: 30px;
+  line-height: 30px;
+  padding: 0 18px;
+  font-size: 14px;
+  box-sizing: border-box;
+  border: none;
+  background: #ddd;
+  color: #666;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+button:active {
+  opacity: 0.7;
+  transition: all .05s ease;
+}
+button[b] {
+  font-weight: bold;
+}
+button[size="1"] {
+  font-size: 12px;
+  height: 18px;
+  line-height: 18px;
+  padding: 0 6px;
+}
+button[size="2"] {
+  font-size: 12px;
+  height: 22px;
+  line-height: 22px;
+  padding: 0 10px;
+}
+button[size="3"] {
+  font-size: 12px;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 14px;
+}
+button[size="5"] {
+  height: 34px;
+  line-height: 34px;
+  padding: 0 22px;
+}
+button[size="6"] {
+  font-size: 16px;
+  height: 38px;
+  line-height: 38px;
+  padding: 0 24px;
+}
+button[size="7"] {
+  font-size: 16px;
+  height: 42px;
+  line-height: 42px;
+  padding: 0 26px;
+}
+button[size="8"] {
+  font-size: 17px;
+  height: 46px;
+  line-height: 46px;
+  padding: 0 28px;
+}
+button[size="9"] {
+  font-size: 18px;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 32px;
+}
+button[type="primary"] {
+  background: #4e72b8;
+  color: #fff;
+}
+button[type="danger"] {
+  background: #d93a49;
+  color: #fff;
+}
+button[type="warning"] {
+  background: #f47920;
+  color: #fff;
+}
+button[type="success"] {
+  background: #46dd5f;
+  color: #fff;
+}
+button[type="info"] {
+  background: #46addd;
+  color: #fff;
+}
+button[type="light"] {
+  background: #ffffff;
+  color: #000;
+}
+button[type="dark"] {
+  background: #000000;
+  color: #fff;
+}
