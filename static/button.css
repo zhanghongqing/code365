@@ -219,6 +219,7 @@ button[type="dark"][line] {
 /* 按钮组 */
 .btnGroup {
   overflow: hidden;
+  display: inline-block;
 }
 .btnGroup .btn {
   float: left;
@@ -240,5 +241,13 @@ button[type="dark"][line] {
 }
 .btnGroup[type="primary"] .btn {
   background: #4b91e0;
+  color: #fff;
+}
+.btnGroup[type="danger"] .btn {
+  background: #eb3d4e;
+  color: #fff;
+}
+.btnGroup[type="warning"] .btn {
+  background: #faa526;
   color: #fff;
 }
