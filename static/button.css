@@ -8,14 +8,42 @@ button {
   background: #ddd;
   color: #666;
   cursor: pointer;
+  border-radius: 3px;
   transition: all .3s ease;
 }
 button:active {
   opacity: 0.7;
   transition: all .05s ease;
 }
+button[line] {
+  box-shadow: 0 0 0 1px #999 inset;
+  background: transparent !important;
+  color: #666;
+}
+button[line-fill] {
+  box-shadow: 0 0 0 1px #ccc inset;
+  background: #f8f8f8;
+  color: #666;
+}
 button[b] {
   font-weight: bold;
+}
+button[square] {
+  border-radius: 0;
+}
+button[round] {
+  border-radius: 100px;
+}
+button[circle] {
+  padding: 0 !important;
+  width: 30px;
+  border-radius: 50%;
+  text-align: center;
+}
+button[disabled] {
+  background: #eee !important;
+  color: #ccc !important;
+  cursor: not-allowed !important;
 }
 button[size="1"] {
   font-size: 12px;
@@ -23,11 +51,17 @@ button[size="1"] {
   line-height: 18px;
   padding: 0 6px;
 }
+button[size="1"][circle] {
+  width: 18px;
+}
 button[size="2"] {
   font-size: 12px;
   height: 22px;
   line-height: 22px;
   padding: 0 10px;
+}
+button[size="2"][circle] {
+  width: 22px;
 }
 button[size="3"] {
   font-size: 12px;
@@ -35,10 +69,16 @@ button[size="3"] {
   line-height: 26px;
   padding: 0 14px;
 }
+button[size="3"][circle] {
+  width: 26px;
+}
 button[size="5"] {
   height: 34px;
   line-height: 34px;
   padding: 0 22px;
+}
+button[size="5"][circle] {
+  width: 34px;
 }
 button[size="6"] {
   font-size: 16px;
@@ -46,11 +86,17 @@ button[size="6"] {
   line-height: 38px;
   padding: 0 24px;
 }
+button[size="6"][circle] {
+  width: 38px;
+}
 button[size="7"] {
   font-size: 16px;
   height: 42px;
   line-height: 42px;
   padding: 0 26px;
+}
+button[size="7"][circle] {
+  width: 42px;
 }
 button[size="8"] {
   font-size: 17px;
@@ -58,37 +104,106 @@ button[size="8"] {
   line-height: 46px;
   padding: 0 28px;
 }
+button[size="8"][circle] {
+  width: 46px;
+}
 button[size="9"] {
   font-size: 18px;
   height: 50px;
   line-height: 50px;
   padding: 0 32px;
 }
+button[size="9"][circle] {
+  width: 50px;
+}
 button[type="primary"] {
-  background: #4e72b8;
+  background: #4b91e0;
   color: #fff;
+}
+button[type="primary"][line-fill] {
+  background: #f1f8ff;
+  box-shadow: 0 0 0 1px #4b91e0 inset;
+  color: #4b91e0;
+}
+button[type="primary"][line] {
+  box-shadow: 0 0 0 1px #4b91e0 inset;
+  color: #4b91e0;
 }
 button[type="danger"] {
-  background: #d93a49;
+  background: #eb3d4e;
   color: #fff;
+}
+button[type="danger"][line-fill] {
+  background: #ffeef0;
+  box-shadow: 0 0 0 1px #eb3d4e inset;
+  color: #eb3d4e;
+}
+button[type="danger"][line] {
+  box-shadow: 0 0 0 1px #eb3d4e inset;
+  color: #eb3d4e;
 }
 button[type="warning"] {
-  background: #f47920;
+  background: #faa526;
   color: #fff;
+}
+button[type="warning"][line-fill] {
+  background: #fff4e4;
+  box-shadow: 0 0 0 1px #faa526 inset;
+  color: #faa526;
+}
+button[type="warning"][line] {
+  box-shadow: 0 0 0 1px #faa526 inset;
+  color: #faa526;
 }
 button[type="success"] {
-  background: #46dd5f;
+  background: #53be29;
   color: #fff;
+}
+button[type="success"][line-fill] {
+  background: #edffe6;
+  box-shadow: 0 0 0 1px #53be29 inset;
+  color: #53be29;
+}
+button[type="success"][line] {
+  box-shadow: 0 0 0 1px #53be29 inset;
+  color: #53be29;
 }
 button[type="info"] {
-  background: #46addd;
+  background: #33c5cf;
   color: #fff;
 }
+button[type="info"][line-fill] {
+  background: #e6fdff;
+  box-shadow: 0 0 0 1px #33c5cf inset;
+  color: #33c5cf;
+}
+button[type="info"][line] {
+  box-shadow: 0 0 0 1px #33c5cf inset;
+  color: #33c5cf;
+}
 button[type="light"] {
-  background: #ffffff;
+  background: #f6f5ec;
   color: #000;
+}
+button[type="light"][line-fill] {
+  box-shadow: 0 0 0 1px #ccc inset;
+  background: #fff;
+  color: #999;
+}
+button[type="light"][line] {
+  box-shadow: 0 0 0 1px #ccc inset;
+  color: #999;
 }
 button[type="dark"] {
   background: #000000;
   color: #fff;
+}
+button[type="dark"][line-fill] {
+  background: #ffffff;
+  box-shadow: 0 0 0 1px #000000 inset;
+  color: #000000;
+}
+button[type="dark"][line] {
+  box-shadow: 0 0 0 1px #000000 inset;
+  color: #000000;
 }
